@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 7 mar. 2023 17:33:55 by Hibernate Tools 6.0.2.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="" name="practicauno.sda.dto.programas_educativos" optimistic-lock="none" table="programas_educativos">
+        <id name="idPrograma" type="java.lang.Integer">
+            <column name="idPrograma"/>
+            <generator class="identity"/>
+        </id>
+        <property name="idArea" type="java.lang.Integer">
+            <column length="11" name="idArea"/>
+        </property>
+        <property name="nombrePrograma" type="string">
+            <column length="100" name="nombrePrograma"/>
+        </property>
+        <property name="fechaCreacion" type="java.util.Date">
+            <column name="fechaCreacion"/>
+        </property>
+    </class>
+</hibernate-mapping>

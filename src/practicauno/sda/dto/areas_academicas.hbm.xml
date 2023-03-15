@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 7 mar. 2023 17:33:55 by Hibernate Tools 6.0.2.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class catalog="" name="practicauno.sda.dto.AreaAcademica" optimistic-lock="none" table="areas_academicas">
+        <id name="idArea" type="java.lang.Integer">
+            <column name="idArea"/>
+            <generator class="identity"/>
+        </id>  
+        <property name="nombreArea" type="string">
+            <column length="50" name="nombreArea"/>
+        </property>
+        <property name="esActiva" type="java.lang.Byte">
+            <column name="esActiva"/>
+        </property>
+    </class>
+</hibernate-mapping>
